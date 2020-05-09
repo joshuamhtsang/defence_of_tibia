@@ -6,7 +6,7 @@ function App() {
   const [characterName, setCharacterName] = useState('Ashe');
   const [turn, setTurn] = useState(0);
   const [castleMaxHealth, setCastleMaxHealth] = useState(100);
-  const [castleHealth, setCastleHealth] = useState(100);
+  const [castleHealth, setCastleHealth] = useState(80);
   const [gold, setGold] = useState(1000);
 
   useEffect(() => {
