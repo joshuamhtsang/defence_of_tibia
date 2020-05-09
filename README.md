@@ -1,3 +1,31 @@
+# defence_of_tibia
+Defend the castle from hostile creatures from Tibia. React application using Hooks.
+
+
+
+
+
+
+
+# Resources used:
+
+https://upmostly.com/tutorials/build-a-react-timer-component-using-hooks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
