@@ -29,6 +29,7 @@ function App() {
         value={castleHealth}
         max={castleMaxHealth}
         color='#ff0000'
+        height='10'
       />
     </div>
   )
