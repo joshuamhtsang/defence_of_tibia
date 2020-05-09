@@ -23,7 +23,8 @@ function App() {
     <div className="App"> 
       <div> Defence of Tibia </div>
       <div> Name: {characterName} </div>
-      <div> Turn: {turn}</div>
+      <div> Turn: {turn} </div>
+      <div> Gold: {gold} </div>
 
       <FillableBar 
         value={castleHealth}
