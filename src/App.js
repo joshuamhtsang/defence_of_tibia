@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FillableBar from './components/FillableBar';
+import BattleField from './components/BattleField';
 import './App.css';
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
         color='#ff0000'
         height='10'
       />
+
+      <BattleField>
+        
+      </BattleField>
     </div>
   )
 }
