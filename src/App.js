@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import FillableBar from './components/FillableBar';
 import './App.css';
 
 function App() {
   const [characterName, setCharacterName] = useState('Ashe');
   const [turn, setTurn] = useState(0);
+  const [castleMaxHealth, setCastleMaxHealth] = useState(100);
   const [castleHealth, setCastleHealth] = useState(100);
   const [gold, setGold] = useState(1000);
 
@@ -23,6 +24,12 @@ function App() {
       <div> Defence of Tibia </div>
       <div> Name: {characterName} </div>
       <div> Turn: {turn}</div>
+
+      <FillableBar 
+        value={castleHealth}
+        max={castleMaxHealth}
+        color='#ff0000'
+      />
     </div>
   )
 }
