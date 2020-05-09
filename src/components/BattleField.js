@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
       margin: 'auto',
       maxWidth: 500,
-      background: '#7b7780'
+      background: '#7b7780',
+      alignItems: 'flex-start',
     },
     castle_ranged: {
         padding: theme.spacing(2),
@@ -39,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
 
 const BattleField = (props) => {
     const classes = useStyles();
+
+    // Get all castle melee units.
+    let meleeUnits = props.garrison.filter(x => x.type === 'melee');
+
     return(
         <div className={classes.root}>
             <Grid
@@ -61,6 +66,34 @@ const BattleField = (props) => {
                 </Grid>
                 <Grid item xs className={classes.castle_healers}>
                     Healers
+                </Grid>
+            </Grid>
+            <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="flex-end"
+            >
+                <Grid item xs className={classes.enemy_ranged}>
+                    
+                </Grid>
+                <Grid item xs className={classes.enemy_ranged}>
+                    
+                </Grid>
+                <Grid item xs className={classes.castle_melee}>
+                    {meleeUnits.map((unit) => {
+                        return(
+                            <div>
+                                {unit.name}
+                            </div>
+                        )
+                    })}
+                </Grid>
+                <Grid item xs className={classes.enemy_ranged}>
+                    
+                </Grid>
+                <Grid item xs className={classes.enemy_ranged}>
+                    
                 </Grid>
             </Grid>
         </div>
