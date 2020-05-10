@@ -9,7 +9,7 @@ function App() {
   const [castleMaxHealth, setCastleMaxHealth] = useState(100);
   const [castleHealth, setCastleHealth] = useState(80);
   const [gold, setGold] = useState(1000);
-  const [citizens, setCitizens] = useState(100);
+  const [citizens, setCitizens] = useState(10);
   const [garrison, setGarrison] = useState([
     {name: 'Squire', maxHealth: 5, health: 5, type: 'melee'},
     {name: 'Knight', maxHealth: 10, health: 10, type: 'melee'}
