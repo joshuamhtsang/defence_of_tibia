@@ -4,7 +4,8 @@ import FillableBar from './FillableBar';
 const Unit = (props) => {
     return(
         <div> 
-            {props.name},
+            {props.name}
+            <img src={props.picture}/>
             <FillableBar
                 value={props.health}
                 max={props.maxHealth}

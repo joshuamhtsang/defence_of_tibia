@@ -3,6 +3,9 @@ import FillableBar from './components/FillableBar';
 import BattleField from './components/BattleField';
 import './App.css';
 
+import squirePicture from './game/unit_pictures/Squire.gif';
+import knightPicture from './game/unit_pictures/Knight.gif';
+
 function App() {
   const [characterName, setCharacterName] = useState('Ashe');
   const [turn, setTurn] = useState(0);
@@ -11,8 +14,8 @@ function App() {
   const [gold, setGold] = useState(1000);
   const [citizens, setCitizens] = useState(10);
   const [garrison, setGarrison] = useState([
-    {name: 'Squire', maxHealth: 5, health: 5, type: 'melee'},
-    {name: 'Knight', maxHealth: 10, health: 10, type: 'melee'}
+    {name: 'Squire', maxHealth: 5, health: 3, type: 'melee', picture: squirePicture},
+    {name: 'Knight', maxHealth: 10, health: 10, type: 'melee', picture: knightPicture}
   ]);
 
   useEffect(() => {

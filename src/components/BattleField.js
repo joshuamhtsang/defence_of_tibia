@@ -110,6 +110,7 @@ const BattleField = (props) => {
                                 maxHealth={unit.maxHealth}
                                 health={unit.health}
                                 type={unit.type}
+                                picture={unit.picture}
                             />
                         )
                     })}
