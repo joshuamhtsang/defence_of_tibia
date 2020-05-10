@@ -6,7 +6,7 @@ const FillableBar = (props) => {
     let percentage = props.value / props.max * 100;
     let text_value = props.value + '/' + props.max;
     return (
-      <div className="fillable-bar" style={{height: `${props.height}px`}}>
+      <div className="fillable-bar" style={{height: `${props.height}px`, width: `${props.widthPercentage}%`, justifyContent: `center`}}>
         <Filler percentage={percentage} text_value={text_value} color={props.color} height={props.height}/>
       </div>
     )

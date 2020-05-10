@@ -1,9 +1,11 @@
 import React from 'react';
 import FillableBar from './FillableBar';
 
+import './Unit.css';
+
 const Unit = (props) => {
     return(
-        <div> 
+        <div className='unit'>
             {props.name}
             <img src={props.picture}/>
             <FillableBar
@@ -11,6 +13,7 @@ const Unit = (props) => {
                 max={props.maxHealth}
                 color='#ff0000'
                 height='1'
+                widthPercentage='90'
             />
         </div>
     )
