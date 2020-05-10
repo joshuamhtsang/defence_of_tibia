@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       background: '#1DA598'
     },
-    castle_melee: {
+    castle_melee_header: {
       padding: theme.spacing(2),
       margin: 'auto',
       maxWidth: 500,
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       borderColor: '#fcb603',
       borderStyle: 'solid'
     },
-    castle_ranged: {
+    castle_ranged_header: {
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         borderColor: '#fcb603',
         borderStyle: 'solid'
     },
-    castle_healers: {
+    castle_healers_header: {
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         borderColor: '#fcb603',
         borderStyle: 'solid'
     },
-    enemy_melee: {
+    enemy_melee_header: {
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
         borderColor: '#fcb603',
         borderStyle: 'solid'
     },
-    enemy_ranged: {
+    enemy_ranged_header: {
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
@@ -74,19 +74,19 @@ const BattleField = (props) => {
                 justify="center"
                 alignItems="center"
             >
-                <Grid item xs className={classes.enemy_ranged}>
+                <Grid item xs className={classes.enemy_ranged_header}>
                     Enemy (Ranged)
                 </Grid>
-                <Grid item xs className={classes.enemy_melee}>
+                <Grid item xs className={classes.enemy_melee_header}>
                     Enemy (Melee)
                 </Grid>
-                <Grid item xs className={classes.castle_melee}>
+                <Grid item xs className={classes.castle_melee_header}>
                     Melee
                 </Grid>
-                <Grid item xs className={classes.castle_ranged}>
+                <Grid item xs className={classes.castle_ranged_header}>
                     Ranged
                 </Grid>
-                <Grid item xs className={classes.castle_healers}>
+                <Grid item xs className={classes.castle_healers_header}>
                     Healers
                 </Grid>
             </Grid>
