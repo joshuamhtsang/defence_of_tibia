@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
+import Unit from './Unit';
+
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -103,9 +105,12 @@ const BattleField = (props) => {
                 <Grid item xs className={classes.castle_melee}>
                     {meleeUnits.map((unit) => {
                         return(
-                            <div>
-                                {unit.name}
-                            </div>
+                            <Unit
+                                name={unit.name}
+                                maxHealth={unit.maxHealth}
+                                health={unit.health}
+                                type={unit.type}
+                            />
                         )
                     })}
                 </Grid>
