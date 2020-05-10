@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
@@ -11,30 +11,50 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
       margin: 'auto',
       maxWidth: 500,
+      height: 65,
       background: '#7b7780',
       alignItems: 'flex-start',
+      border: 2,
+      borderColor: '#fcb603',
+      borderStyle: 'solid'
     },
     castle_ranged: {
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
-        background: '#7b7780'
+        height: 65,
+        background: '#7b7780',
+        border: 2,
+        borderColor: '#fcb603',
+        borderStyle: 'solid'
     },
     castle_healers: {
         padding: theme.spacing(2),
         margin: 'auto',
         maxWidth: 500,
-        background: '#7b7780'
+        height: 65,
+        background: '#7b7780',
+        border: 2,
+        borderColor: '#fcb603',
+        borderStyle: 'solid'
     },
     enemy_melee: {
         padding: theme.spacing(2),
         margin: 'auto',
-        maxWidth: 500
+        maxWidth: 500,
+        height: 65,
+        border: 2,
+        borderColor: '#fcb603',
+        borderStyle: 'solid'
     },
     enemy_ranged: {
         padding: theme.spacing(2),
         margin: 'auto',
-        maxWidth: 500
+        maxWidth: 500,
+        height: 65,
+        border: 2,
+        borderColor: '#fcb603',
+        borderStyle: 'solid'
     }
 }));
 
@@ -50,7 +70,7 @@ const BattleField = (props) => {
                 container
                 direction="row"
                 justify="center"
-                alignItems="flex-end"
+                alignItems="center"
             >
                 <Grid item xs className={classes.enemy_ranged}>
                     Enemy (Ranged)
@@ -72,7 +92,7 @@ const BattleField = (props) => {
                 container
                 direction="row"
                 justify="center"
-                alignItems="flex-end"
+                alignItems="center"
             >
                 <Grid item xs className={classes.enemy_ranged}>
                     

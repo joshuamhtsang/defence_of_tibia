@@ -21,13 +21,13 @@ function App() {
       setTurn(turn => turn + 1);
 
       const income_period = 10;
-      if (turn % income_period === 0 && turn != 0) {
+      if (turn % income_period === 0 && turn !== 0) {
         let income = Math.round(citizens * 0.1);
         setGold(gold => gold + income);
       }
 
       const population_increase_period = 100;
-      if (turn % population_increase_period === 0 && turn != 0) {
+      if (turn % population_increase_period === 0 && turn !== 0) {
         let population_increase = Math.round(citizens * 0.05);
         setCitizens(citizens => citizens + population_increase);
       }
